@@ -1,0 +1,86 @@
+.not-found-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0px 24px;
+}
+
+.error-img {
+  width: 140px;
+  height: 155px;
+}
+
+.not-found-heading {
+  color: #1e293b;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  margin-top: 24px;
+}
+
+.not-found-describe {
+  color: #475569;
+  text-align: center;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 12px 0px;
+}
+
+.not-found-btn {
+  background-color: #f7931e;
+  border-radius: 8px;
+  display: flex;
+  padding: 8px 16px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  margin: 16px 0px;
+  transition: 0.3s ease;
+}
+
+.not-found-btn:hover {
+  background-color: #d47e19;
+}
+
+.not-found-link {
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .error-img {
+    height: 300px;
+    width: 270px;
+  }
+  .not-found-heading {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .not-found-describe {
+    font-size: 20px;
+    line-height: 32px;
+    width: 550px;
+  }
+  .not-found-btn {
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-size: 14px;
+    line-height: 24px;
+  }
+}

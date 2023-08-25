@@ -1,0 +1,272 @@
+.navbar {
+  background-color: #f8fafc;
+  position: sticky;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-app-logo-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-app-logo {
+  height: 32px;
+  width: 39px;
+}
+
+.header-app-name {
+  color: #f7931e;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+  margin-left: 8px;
+}
+
+.menu-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.menu-close-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 0px;
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 22px;
+}
+
+.nav-item-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-text {
+  color: #334155;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: -0.356px;
+  margin-right: 24px;
+  transition: 0.2s ease;
+}
+
+.nav-text:hover {
+  transform: scale(1.2);
+}
+
+.nav-logout-btn {
+  background-color: #f7931e;
+  color: #ffffff;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  border-radius: 8px;
+  padding: 8px 16px;
+  margin-right: 24px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.nav-logout-btn:hover {
+  background: #d47e19;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+.nav-item-list-large {
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+}
+
+.nav-text-large {
+  color: #334155;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: -0.356px;
+  margin-right: 32px;
+  transition: 0.3s ease;
+}
+
+.nav-text-large:hover {
+  transform: scale(1.3);
+}
+
+.logout-large {
+  color: #ffffff;
+  border-radius: 8px;
+  background: #f7931e;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16px;
+  transition: 0.3s linear;
+}
+
+.logout-large:hover {
+  background: #d47e19;
+}
+
+.active-nav-section {
+  color: #f7931e;
+}
+
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+  .navbar {
+    padding: 26px 40px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-item-list-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header-app-logo {
+    height: 43px;
+    width: 53px;
+  }
+  .header-app-name {
+    font-size: 24px;
+    margin-left: 16px;
+  }
+  .navigation-container {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .navbar {
+    padding: 26px 140px;
+  }
+}
+
+.confirm-logout-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  width: 300px;
+  padding: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.confirmation-msg {
+  color: #183b56;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  font-family: DM Sans;
+}
+
+.logout-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirmation-btn {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 12px;
+  margin: 12px;
+  border-radius: 6px;
+  text-shadow: 1px 1px #48494b;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cancel-btn {
+  border: 1px solid;
+  color: #17bf11;
+  background: linear-gradient(to right, #17bf11 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.cancel-btn:hover {
+  background-position: left bottom;
+  color: #ffffff;
+  transform: scale(0.95);
+}
+
+.confirm-btn {
+  border: 1px solid;
+  color: red;
+  background: linear-gradient(to right, red 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+}
+
+.confirm-btn:hover {
+  background-position: left bottom;
+  color: #ffffff;
+  transform: scale(0.95);
+}
+
+@media screen and (min-width: 768px) {
+  .confirm-logout-container {
+    width: 450px;
+  }
+  .confirmation-msg {
+    font-size: 22px;
+  }
+  .confirmation-btn {
+    font-size: 18px;
+    padding: 10px 18px;
+  }
+}

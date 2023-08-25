@@ -1,0 +1,147 @@
+.cart-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+.cart-item-img {
+  height: 90px;
+  width: 136px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.cart-item-detail {
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+}
+
+.cart-item-name {
+  color: #183b56;
+  font-family: DM Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+}
+
+.cart-item-change-container {
+  display: flex;
+  align-items: center;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.cart-item-btn {
+  background-color: transparent;
+  border-radius: 2.25px;
+  border: 0.75px solid #475569;
+  padding: 4.5px;
+  gap: 5.625px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s ease;
+}
+
+.cart-item-btn:hover {
+  background-color: #ffa412;
+}
+
+.cart-item-quantity {
+  color: #475569;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0px 12px;
+}
+
+.cart-item-total-price {
+  color: #ffa412;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+}
+
+.item-dish-container {
+  display: flex;
+  align-items: center;
+}
+
+.item-name-large {
+  color: #183b56;
+  font-family: DM Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  margin: 0px;
+  margin-left: 16px;
+  display: none;
+}
+
+.cart-quantity-container-large {
+  display: none;
+  align-items: center;
+}
+
+.item-price-large {
+  color: #ffa412;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  margin: 0px;
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .cart-item {
+    justify-content: center;
+  }
+  .cart-item-img {
+    height: 100px;
+    width: 136px;
+  }
+  .cart-item-detail {
+    display: none;
+  }
+  .cart-item-name {
+    display: none;
+  }
+  .cart-item-change-container {
+    display: none;
+  }
+  .cart-item-total-price {
+    display: none;
+  }
+  .item-dish-container {
+    width: calc(100% / 3);
+  }
+  .item-name-large {
+    display: block;
+  }
+  .cart-quantity-container-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+  }
+  .item-price-large {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(100% / 3);
+  }
+}
