@@ -44,7 +44,7 @@ class Cart extends Component {
     }
     return (
       <>
-        <div className="cart-container">
+        <div data-testid="cartItem" className="cart-container">
           <div className="cart-column-head">
             <p className="column-title">Item</p>
             <p className="column-title">Quantity</p>
@@ -80,9 +80,9 @@ class Cart extends Component {
       <img
         className="no-order-img"
         src="https://res.cloudinary.com/dlrmevp74/image/upload/v1692818222/cooking_1_zyfkrr.png"
-        alt="no-order"
+        alt="empty cart"
       />
-      <h1 className="no-order-heading">No Orders Yet!</h1>
+      <h1 className="no-order-heading">No Order Yet!</h1>
       <p className="no-order-describe">
         Your cart is empty. Add something from the menu.
       </p>
