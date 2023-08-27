@@ -172,8 +172,14 @@ class Home extends Component {
     </div>
   )
 
-  renderLoadingView = () => (
-    <div className="loading-container">
+  renderCarouselLoadingView = () => (
+    <div testid="restaurants-offers-loader" className="loading-container">
+      <Loader type="ThreeDots" color="#F7931E" height="50" width="50" />
+    </div>
+  )
+
+  renderRestaurantLoadingView = () => (
+    <div testid="restaurants-list-loader" className="loading-container">
       <Loader type="ThreeDots" color="#F7931E" height="50" width="50" />
     </div>
   )
@@ -186,7 +192,7 @@ class Home extends Component {
       case apiStatusConstant.failure:
         return this.renderFailureView()
       case apiStatusConstant.inProgress:
-        return this.renderLoadingView()
+        return this.renderCarouselLoadingView()
       default:
         return null
     }
@@ -214,7 +220,7 @@ class Home extends Component {
       case apiStatusConstant.failure:
         return this.renderFailureView()
       case apiStatusConstant.inProgress:
-        return this.renderLoadingView()
+        return this.renderRestaurantLoadingView()
       default:
         return null
     }
