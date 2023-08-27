@@ -110,7 +110,7 @@ class Header extends Component {
             <img
               className="header-app-logo"
               src="https://res.cloudinary.com/dlrmevp74/image/upload/v1692378754/Frame_274_yvaarg.png"
-              alt="website login"
+              alt="website logo"
             />
             <h1 className="header-app-name">Tasty Kitchens</h1>
           </Link>

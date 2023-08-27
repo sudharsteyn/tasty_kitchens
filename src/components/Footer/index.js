@@ -25,7 +25,7 @@ export default function Footer() {
       <div className="social-media-container">
         <a target="_blank" rel="noreferrer" href="https://in.pinterest.com/">
           <FaPinterestSquare
-            data-testid="pintrest-social-icon"
+            testid="pintrest-social-icon"
             className="social-icons"
           />
         </a>
@@ -35,15 +35,12 @@ export default function Footer() {
           href="https://www.instagram.com/sudhaxrx/"
         >
           <FaInstagram
-            data-testid="instagram-social-icon"
+            testid="instagram-social-icon"
             className="social-icons"
           />
         </a>
         <a target="_blank" rel="noreferrer" href="https://twitter.com/">
-          <FaTwitter
-            data-testid="twitter-social-icon"
-            className="social-icons"
-          />
+          <FaTwitter testid="twitter-social-icon" className="social-icons" />
         </a>
         <a
           target="_blank"
@@ -51,7 +48,7 @@ export default function Footer() {
           href="https://www.facebook.com/people/Sudharsan/pfbid07uMUB9TZwqDBBDWGuFCJ73tNKfZi2ahtWecXbZcT4gfWT8iiAzaWhX44GD4H1NPal/?mibextid=ZbWKwL"
         >
           <FaFacebookSquare
-            data-testid="facebook-social-icon"
+            testid="facebook-social-icon"
             className="social-icons"
           />
         </a>

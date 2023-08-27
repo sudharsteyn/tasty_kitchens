@@ -44,7 +44,7 @@ class Cart extends Component {
     }
     return (
       <>
-        <div data-testid="cartItem" className="cart-container">
+        <div testid="cartItem" className="cart-container">
           <div className="cart-column-head">
             <p className="column-title">Item</p>
             <p className="column-title">Quantity</p>

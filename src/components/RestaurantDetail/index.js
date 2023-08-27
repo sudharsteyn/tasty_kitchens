@@ -108,7 +108,7 @@ class RestaurantDetail extends Component {
             alt="restaurant-img"
           />
           <div className="restaurant-detailed-container">
-            <p className="banner-restaurant-name">{name}</p>
+            <h1 className="banner-restaurant-name">{name}</h1>
             <p className="banner-restaurant-cuisine">{cuisine}</p>
             <p className="banner-restaurant-location">{location}</p>
             <div className="banner-additional-info-container">
