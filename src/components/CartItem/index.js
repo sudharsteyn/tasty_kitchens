@@ -22,10 +22,14 @@ class CartItem extends Component {
             decreaseItem(id)
           }
           return (
-            <li className="cart-item">
+            <li testid="cartItem" className="cart-item">
               <div className="item-dish-container">
-                <img className="cart-item-img" src={imageUrl} alt={name} />
-                <p className="item-name-large">{name}</p>
+                <img
+                  src={imageUrl}
+                  alt="restaurant-id"
+                  className="cart-item-img"
+                />
+                <h1 className="item-name-large">{name}</h1>
               </div>
               <div className="cart-quantity-container-large">
                 <button

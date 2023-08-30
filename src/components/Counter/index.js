@@ -18,6 +18,7 @@ class Counter extends Component {
     return (
       <div className="pagination-container">
         <button
+          testid="pagination-left-button"
           className="page-btn"
           type="button"
           onClick={this.onDecrement}
@@ -37,10 +38,12 @@ class Counter extends Component {
             />
           </svg>
         </button>
-        <p className="page-list">
-          {currentPage} of {totalPage}
+        <p testid="active-page-number" className="page-list">
+          {currentPage}
         </p>
+        <p className="page-list"> of {totalPage}</p>
         <button
+          testid="pagination-right-button"
           className="page-btn"
           type="button"
           onClick={this.onIncrement}

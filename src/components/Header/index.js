@@ -42,7 +42,7 @@ class Header extends Component {
           <li className={`nav-text ${cartClassName}`}>Cart</li>
         </Link>
         <li>
-          <Popup
+          {/*<Popup
             modal
             lockScroll
             trigger={
@@ -78,7 +78,14 @@ class Header extends Component {
                 </div>
               </div>
             )}
-          </Popup>
+          </Popup>*/}
+          <button
+            onClick={this.onUserLogout}
+            className="nav-logout-btn"
+            type="button"
+          >
+            Logout
+          </button>
         </li>
       </ul>
       <button
@@ -142,11 +149,22 @@ class Header extends Component {
             <li className={`nav-text-large ${cartClassName}`}>Cart</li>
           </Link>
           <li>
-            <Popup
+            <button
+              onClick={this.onUserLogout}
+              className="logout-large"
+              type="button"
+            >
+              Logout
+            </button>
+            {/*<Popup
               modal
               lockScroll
               trigger={
-                <button className="logout-large" type="button">
+                <button
+                  onClick={this.onUserLogout}
+                  className="logout-large"
+                  type="button"
+                >
                   Logout
                 </button>
               }
@@ -174,7 +192,7 @@ class Header extends Component {
                   </div>
                 </div>
               )}
-            </Popup>
+            </Popup>*/}
           </li>
         </ul>
         {showNavItems && this.renderMobileNavItem(homeClassName, cartClassName)}

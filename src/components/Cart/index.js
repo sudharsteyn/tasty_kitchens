@@ -44,7 +44,7 @@ class Cart extends Component {
     }
     return (
       <>
-        <div testid="cartItem" className="cart-container">
+        <div className="cart-container">
           <div className="cart-column-head">
             <p className="column-title">Item</p>
             <p className="column-title">Quantity</p>
@@ -57,8 +57,10 @@ class Cart extends Component {
           </ul>
           <hr className="cart-dash-line" />
           <div className="total-container">
-            <p className="order-total-head">Order Total : </p>
-            <p className="order-total-amount">₹ {totalAmount}.00</p>
+            <h1 className="order-total-head">Order Total :</h1>
+            <p testid="total-price" className="order-total-amount">
+              ₹ {totalAmount}.00
+            </p>
           </div>
           <div className="place-order-btn-container">
             <button

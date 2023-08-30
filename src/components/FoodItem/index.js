@@ -29,11 +29,12 @@ class FoodItem extends Component {
             eachItem => eachItem.id === foodDetail.id,
           )
           return (
-            <li className="food-item">
+            <li testid="foodItem" className="food-item">
               <img className="food-image" src={imageUrl} alt={name} />
               <div className="food-info-container">
-                <p className="food-name">{name}</p>
-                <p className="food-cost">₹ {cost}.00</p>
+                <h1 className="food-name">{name}</h1>
+                <p className="food-cost">{cost}</p>
+                {/*<p className="food-cost">₹ {cost}.00</p>*/}
                 <div className="food-rating-container">
                   <AiFillStar size="12" color="#ffcc00" />
                   <p className="food-rating">{rating}</p>
@@ -41,14 +42,18 @@ class FoodItem extends Component {
                 {isItemExist ? (
                   <div className="add-more-item-container">
                     <button
+                      testid="decrement-count"
                       onClick={onDecreaseItem}
                       className="item-increase-decrease-btn"
                       type="button"
                     >
                       <FiMinus size="10" color="#3E4C59" />
                     </button>
-                    <p className="item-quantity">{isItemExist.quantity}</p>
+                    <p testid="active-count" className="item-quantity">
+                      {isItemExist.quantity}
+                    </p>
                     <button
+                      testid="increment-count"
                       onClick={onIncreaseItem}
                       className="item-increase-decrease-btn"
                       type="button"
@@ -62,7 +67,7 @@ class FoodItem extends Component {
                     className="food-add-btn"
                     type="button"
                   >
-                    ADD
+                    Add
                   </button>
                 )}
               </div>

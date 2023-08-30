@@ -127,12 +127,7 @@ class Home extends Component {
 
   showCarouselImg = carousel => (
     <li key={carousel.id} className="carousel-item">
-      <img
-        key={carousel.id}
-        className="carousel-image"
-        src={carousel.imageUrl}
-        alt={`carousel ${carousel.id}`}
-      />
+      <img className="carousel-image" src={carousel.imageUrl} alt="offer" />
     </li>
   )
 
