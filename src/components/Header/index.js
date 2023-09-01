@@ -42,43 +42,6 @@ class Header extends Component {
           <li className={`nav-text ${cartClassName}`}>Cart</li>
         </Link>
         <li>
-          {/*<Popup
-            modal
-            lockScroll
-            trigger={
-              <button
-                onClick={this.onUserLogout}
-                className="nav-logout-btn"
-                type="button"
-              >
-                Logout
-              </button>
-            }
-          >
-            {close => (
-              <div className="confirm-logout-container">
-                <p className="confirmation-msg">
-                  Are you sure, you want to logout?
-                </p>
-                <div className="logout-btn-container">
-                  <button
-                    className="confirmation-btn cancel-btn"
-                    onClick={() => close()}
-                    type="button"
-                  >
-                    Cancel
-                  </button>
-                  <button
-                    className="confirmation-btn confirm-btn"
-                    onClick={this.onUserLogout}
-                    type="button"
-                  >
-                    Confirm
-                  </button>
-                </div>
-              </div>
-            )}
-          </Popup>*/}
           <button
             onClick={this.onUserLogout}
             className="nav-logout-btn"
@@ -156,43 +119,6 @@ class Header extends Component {
             >
               Logout
             </button>
-            {/*<Popup
-              modal
-              lockScroll
-              trigger={
-                <button
-                  onClick={this.onUserLogout}
-                  className="logout-large"
-                  type="button"
-                >
-                  Logout
-                </button>
-              }
-            >
-              {close => (
-                <div className="confirm-logout-container">
-                  <p className="confirmation-msg">
-                    Are you sure, you want to logout?
-                  </p>
-                  <div className="logout-btn-container">
-                    <button
-                      className="confirmation-btn cancel-btn"
-                      onClick={() => close()}
-                      type="button"
-                    >
-                      Cancel
-                    </button>
-                    <button
-                      className="confirmation-btn confirm-btn"
-                      onClick={this.onUserLogout}
-                      type="button"
-                    >
-                      Confirm
-                    </button>
-                  </div>
-                </div>
-              )}
-            </Popup>*/}
           </li>
         </ul>
         {showNavItems && this.renderMobileNavItem(homeClassName, cartClassName)}

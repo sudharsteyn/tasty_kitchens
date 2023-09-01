@@ -34,7 +34,6 @@ class FoodItem extends Component {
               <div className="food-info-container">
                 <h1 className="food-name">{name}</h1>
                 <p className="food-cost">{cost}</p>
-                {/*<p className="food-cost">₹ {cost}.00</p>*/}
                 <div className="food-rating-container">
                   <AiFillStar size="12" color="#ffcc00" />
                   <p className="food-rating">{rating}</p>

@@ -24,11 +24,7 @@ class CartItem extends Component {
           return (
             <li testid="cartItem" className="cart-item">
               <div className="item-dish-container">
-                <img
-                  src={imageUrl}
-                  alt="restaurant-id"
-                  className="cart-item-img"
-                />
+                <img src={imageUrl} alt={name} className="cart-item-img" />
                 <h1 className="item-name-large">{name}</h1>
               </div>
               <div className="cart-quantity-container-large">
@@ -50,7 +46,7 @@ class CartItem extends Component {
               </div>
               <p className="item-price-large">₹ {itemPrice}.00</p>
               <div className="cart-item-detail">
-                <p className="cart-item-name">{name}</p>
+                <h1 className="cart-item-name">{name}</h1>
                 <div className="cart-item-change-container">
                   <button
                     onClick={onDecreaseQuantity}
