@@ -168,13 +168,13 @@ class Home extends Component {
   )
 
   renderCarouselLoadingView = () => (
-    <div testid="restaurants-offers-loader" className="loading-container">
+    <div className="loading-container">
       <Loader type="ThreeDots" color="#F7931E" height="50" width="50" />
     </div>
   )
 
   renderRestaurantLoadingView = () => (
-    <div testid="restaurants-list-loader" className="loading-container">
+    <div className="loading-container">
       <Loader type="ThreeDots" color="#F7931E" height="50" width="50" />
     </div>
   )

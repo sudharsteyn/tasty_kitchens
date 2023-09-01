@@ -29,7 +29,7 @@ class FoodItem extends Component {
             eachItem => eachItem.id === foodDetail.id,
           )
           return (
-            <li testid="foodItem" className="food-item">
+            <li className="food-item">
               <img className="food-image" src={imageUrl} alt={name} />
               <div className="food-info-container">
                 <h1 className="food-name">{name}</h1>
@@ -41,18 +41,14 @@ class FoodItem extends Component {
                 {isItemExist ? (
                   <div className="add-more-item-container">
                     <button
-                      testid="decrement-count"
                       onClick={onDecreaseItem}
                       className="item-increase-decrease-btn"
                       type="button"
                     >
                       <FiMinus size="10" color="#3E4C59" />
                     </button>
-                    <p testid="active-count" className="item-quantity">
-                      {isItemExist.quantity}
-                    </p>
+                    <p className="item-quantity">{isItemExist.quantity}</p>
                     <button
-                      testid="increment-count"
                       onClick={onIncreaseItem}
                       className="item-increase-decrease-btn"
                       type="button"

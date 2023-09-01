@@ -12,7 +12,7 @@ const RestaurantItem = props => {
       onClick={() => window.scrollTo({top: 0, left: 0, behavior: 'smooth'})}
       to={`/restaurant/${id}`}
     >
-      <li testid="restaurant-item" className="restaurant-item">
+      <li className="restaurant-item">
         <img src={imageUrl} alt="restaurant" className="restaurant-img" />
         <div className="restaurant-info">
           <h1 className="restaurant-name">{name}</h1>

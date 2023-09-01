@@ -58,9 +58,7 @@ class Cart extends Component {
           <hr className="cart-dash-line" />
           <div className="total-container">
             <h1 className="order-total-head">Order Total :</h1>
-            <p testid="total-price" className="order-total-amount">
-              ₹ {totalAmount}.00
-            </p>
+            <p className="order-total-amount">₹ {totalAmount}.00</p>
           </div>
           <div className="place-order-btn-container">
             <button
